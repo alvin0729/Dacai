@@ -1,0 +1,1648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--大彩彩票-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="InterfaceController" title="大彩彩票" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" height="56" alignment="center" id="ADO-gA-UvX">
+                            <items>
+                                <button width="44" height="44" alignment="center" verticalAlignment="bottom" backgroundImage="homeResult.png" id="cSA-DE-yY1">
+                                    <connections>
+                                        <segue destination="Ev4-jf-8JF" kind="modal" id="CAX-g1-Yy1"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="133" height="12" alignment="center" text="开奖公告" textAlignment="center" id="gyf-vo-hmd">
+                            <color key="textColor" red="0.98039215686274506" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                        </label>
+                        <group width="0.90000000000000002" height="95" alignment="center" id="rJ1-8O-mkd">
+                            <items>
+                                <group width="55" height="1" alignment="left" verticalAlignment="center" layout="vertical" id="kIl-Ms-vH3">
+                                    <items>
+                                        <group width="1" height="6" alignment="left" id="7i5-wR-rM2"/>
+                                        <button width="44" height="44" alignment="center" backgroundImage="homeZcLogo.png" id="Xyl-bV-xwE">
+                                            <connections>
+                                                <action selector="pushToGameLingJczq" destination="AgC-eL-Hgc" id="hYs-Me-vsB"/>
+                                            </connections>
+                                        </button>
+                                        <label width="1" height="15" alignment="left" text="足球比分" textAlignment="center" id="Sgh-YF-IMT">
+                                            <color key="textColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="55" height="1" alignment="right" verticalAlignment="center" layout="vertical" id="qrz-Ov-Yvw">
+                                    <items>
+                                        <group width="1" height="6" alignment="left" id="hn3-HU-rtO"/>
+                                        <button width="44" height="44" alignment="center" backgroundImage="homeLcLogo.png" id="dQt-FW-ejm">
+                                            <connections>
+                                                <action selector="pushToGameLingJclq" destination="AgC-eL-Hgc" id="DAU-kM-ZEP"/>
+                                            </connections>
+                                        </button>
+                                        <label width="1" height="15" alignment="right" text="篮球比分" textAlignment="center" id="pLG-8T-3Zi">
+                                            <color key="textColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <edgeInsets key="margins" left="1" right="5" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="gameLivingJclqButton" destination="dQt-FW-ejm" id="1y5-hu-hTE"/>
+                        <outlet property="gameLivingJczqButton" destination="Xyl-bV-xwE" id="5nm-NH-bbf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="421" y="346"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="aVo-v1-eFP"/>
+                                <imageView width="40" height="40" alignment="left" verticalAlignment="bottom" image="dacailogo.png" id="35p-2q-ckR"/>
+                                <group width="5" height="1" alignment="left" id="AEP-HP-JwE"/>
+                                <label height="40" alignment="left" verticalAlignment="bottom" text="大乐透" id="Onm-YH-zub">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <label width="1" widthAdjustment="-10" height="40" alignment="right" hidden="YES" text="奖池：--" id="4XV-nH-rWa">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label width="1" widthAdjustment="-10" height="20" alignment="right" hidden="YES" id="qjF-Mm-tFO">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                                <label width="1" height="91" alignment="left" text="暂无数据" textAlignment="center" id="TYC-sC-O6B">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="qjF-Mm-tFO" id="g9W-dh-kvK"/>
+                        <outlet property="issueLabel" destination="4XV-nH-rWa" id="ppl-Ho-aCY"/>
+                        <outlet property="noDataLabel" destination="TYC-sC-O6B" id="7PX-FY-dMD"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="82" y="1063"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" numberOfLines="0" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="default123" id="JfB-70-Muf">
+                        <color key="sashColor" red="0.19607843137254902" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="lwk-FV-dbB" kind="relationship" relationship="dynamicNotificationInterface" id="T5d-0L-HPx"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-153" y="1278.5"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="2VU-xJ-MgK">
+            <objects>
+                <controller identifier="JclqResultController" title="返回" id="vM3-zm-4dT" customClass="JclqResultController">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="rC8-Le-mjS">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="C3Y-CU-Bac"/>
+                                <label height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999996" text="竞彩篮球" textAlignment="left" id="lOX-0M-eCI">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="15" alignment="left" id="PP5-53-5vv">
+                            <items>
+                                <label width="1" widthAdjustment="-5" alignment="right" text="07-15期 周五" id="j4S-4q-uc6">
+                                    <color key="textColor" red="0.70980392160000005" green="0.71764705880000002" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                        <table alignment="left" id="TOU-Zl-7c6">
+                            <items>
+                                <tableRow identifier="defaultJclq" selectable="NO" id="PSQ-9A-HfW" customClass="JcTableRowController">
+                                    <group key="rootItem" width="1" height="56" alignment="left" contentMode="scaleAspectFill" layout="vertical" id="3ed-bI-V4V">
+                                        <items>
+                                            <group width="1" height="32" alignment="left" id="3bk-e6-zKg">
+                                                <items>
+                                                    <group width="36" height="1" alignment="left" id="wYn-fi-1aW">
+                                                        <items>
+                                                            <group width="25" height="25" alignment="right" verticalAlignment="bottom" radius="12.5" id="RAS-4O-EEK">
+                                                                <items>
+                                                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="j4c-c1-777"/>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </group>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </group>
+                                                    <label height="25" alignment="center" verticalAlignment="bottom" text="VS" textAlignment="center" id="NZT-e7-4yS">
+                                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                                    </label>
+                                                    <group width="36" height="1" alignment="right" id="peM-4q-hlk">
+                                                        <items>
+                                                            <group width="25" height="25" alignment="left" verticalAlignment="bottom" radius="12.5" id="sHf-6G-6ZH">
+                                                                <items>
+                                                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="ACa-xH-Hyy"/>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </group>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <group width="1" height="15" alignment="left" id="Vuq-GT-Qxq">
+                                                <items>
+                                                    <label width="55" height="14" alignment="right" text="大彩大彩" textAlignment="center" id="3Vc-86-tnq">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                    <label width="55" height="14" alignment="left" text="大彩大彩" textAlignment="center" id="wBA-z7-adP">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <separator alignment="left" verticalAlignment="bottom" alpha="0.050000000000000003" id="tVU-CB-0H5">
+                                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </separator>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="leftImage" destination="j4c-c1-777" id="IBn-Kn-7SH"/>
+                                        <outlet property="leftLabel" destination="wBA-z7-adP" id="IFT-f0-bfT"/>
+                                        <outlet property="rightImage" destination="ACa-xH-Hyy" id="Lam-Er-XXY"/>
+                                        <outlet property="rightLabel" destination="3Vc-86-tnq" id="slB-xc-s1F"/>
+                                        <outlet property="scoreLabel" destination="NZT-e7-4yS" id="A02-lL-naT"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </table>
+                        <label width="1" height="1" alignment="center" hidden="YES" text="暂无数据" textAlignment="center" id="f3S-Lp-M6u">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="infoGroup" destination="PP5-53-5vv" id="2ov-7W-WAT"/>
+                        <outlet property="infoLabel" destination="j4S-4q-uc6" id="yIc-7T-CDG"/>
+                        <outlet property="interfaceTable" destination="TOU-Zl-7c6" id="9ka-cn-sTl"/>
+                        <outlet property="noDataLabel" destination="f3S-Lp-M6u" id="X4q-zw-glS"/>
+                        <segue destination="Fxc-Dt-iN7" kind="relationship" relationship="nextPage" id="Slh-mJ-asV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-52" y="797"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="Oul-CC-dpX">
+            <objects>
+                <controller identifier="SsqResultInfoController" title="返回" id="Fxc-Dt-iN7" customClass="SsqResultInfoController">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="udl-4p-YTl">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="ed2-aq-KBa"/>
+                                <label height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999996" text="双色球" textAlignment="left" id="sDN-xu-55u">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="134" height="16" alignment="left" id="fbe-Ot-4kY">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="dCa-Vq-yCT"/>
+                                <label alignment="left" alpha="0.69999999999999996" id="yNv-A4-Rnc">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="71" alignment="left" hidden="YES" layout="vertical" id="WfK-aC-eJy">
+                            <items>
+                                <group width="1" height="33" alignment="left" id="9cE-Ts-GD2">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="gDq-Yh-kHN"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="eNy-9I-13A">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="yxy-Wd-PrT">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="yVy-ZX-0rc"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="Mos-vA-L3R">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="Rao-tC-5Hw">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="FNo-jt-19K"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="Pc5-MC-N6I">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="xrz-Hf-so4">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="jAU-FI-HzS"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="30" height="30" alignment="left" id="xOW-iW-qhH">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="qRH-ly-8df">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="Z5z-58-WFP"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="33" alignment="left" verticalAlignment="center" id="KWf-Xv-dNn">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="ew0-El-QEd"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="2T8-3p-ttz">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="ghT-gy-hbo">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="jnY-Hy-bvA"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="uaX-52-1EI">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="FFR-5Z-SZe">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="gp6-Ry-4Lj"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="UMY-yQ-hPv">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="zyL-D4-bqI">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="Yi8-my-ncq"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.10980392160000001" green="0.49019607840000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <label width="1" widthAdjustment="-4" alignment="right" alpha="0.69999999999999996" id="HNu-l7-jjc">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="drawGroup" destination="WfK-aC-eJy" id="ICb-bq-fLA"/>
+                        <outlet property="drawLabel1" destination="yVy-ZX-0rc" id="EK7-Rf-3PP"/>
+                        <outlet property="drawLabel2" destination="FNo-jt-19K" id="Awz-iV-2Xd"/>
+                        <outlet property="drawLabel3" destination="jAU-FI-HzS" id="0gy-fk-5w3"/>
+                        <outlet property="drawLabel4" destination="Z5z-58-WFP" id="iXM-DH-IkW"/>
+                        <outlet property="drawLabel5" destination="jnY-Hy-bvA" id="lbD-Ze-zLC"/>
+                        <outlet property="drawLabel6" destination="gp6-Ry-4Lj" id="72T-dM-c2t"/>
+                        <outlet property="drawLabel7" destination="Yi8-my-ncq" id="kVQ-1b-iXg"/>
+                        <outlet property="drawTimeLabel" destination="HNu-l7-jjc" id="0Dq-xI-bYH"/>
+                        <outlet property="issueLabel" destination="yNv-A4-Rnc" id="9hc-wZ-unp"/>
+                        <segue destination="RTq-7p-92s" kind="relationship" relationship="nextPage" id="74a-Fo-zwm"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="142" y="796"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="tVK-TB-eQt">
+            <objects>
+                <controller identifier="SfcResultController" title="返回" id="RTq-7p-92s" customClass="SfcResultController">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="EyO-wB-LWk">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="hTv-yG-ms8"/>
+                                <label height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999996" text="胜负彩" textAlignment="left" id="vBl-0C-q1d">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="134" height="15" alignment="left" id="kdi-8z-ZZY">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="ZsC-sj-hYb"/>
+                                <label alignment="left" alpha="0.69999999999999996" id="A0u-2v-cR3">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="80" alignment="left" hidden="YES" layout="vertical" id="MZ2-mY-eJI">
+                            <items>
+                                <group width="134" height="24" alignment="left" id="cwy-b1-XwJ">
+                                    <items>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="qKT-lv-cfU">
+                                            <items>
+                                                <label width="1" height="1" alignment="center" textAlignment="center" id="1w6-IE-FnN"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="N18-D9-AW4">
+                                            <items>
+                                                <label width="1" height="1" alignment="center" textAlignment="center" id="SRK-zh-CQM"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="LP3-uC-PY4">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="6Xy-zr-gv9"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="pv1-tL-OKQ">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="b5C-BO-OC0"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="mfd-v5-LE4">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="reN-1D-66E"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.10196078431372549" green="0.66274509803921566" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="rWm-S7-QPk">
+                                            <items>
+                                                <label width="1" height="1" alignment="center" textAlignment="center" id="4vY-vc-SaJ"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="24" alignment="left" id="TJD-8U-647">
+                                    <items>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="0Mp-40-VM2">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="9nB-a2-OEZ"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="aHx-Ve-MPT">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="w1c-Be-djA"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="iYB-n5-4Qd">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="INt-Ee-9YB"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="QoZ-fx-y8p">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="cjc-Ik-0MM"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="WN6-tF-xPg">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="Sxd-JG-H7O"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="5fL-qE-Ahj">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="jwQ-S2-b33"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="24" alignment="left" id="Xol-f4-2rN">
+                                    <items>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="1M5-6R-PLz">
+                                            <items>
+                                                <label width="1" height="1" alignment="left" textAlignment="center" id="Kha-18-tjR"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" radius="4" id="009-AW-Mjo">
+                                            <items>
+                                                <label width="21" height="1" alignment="left" textAlignment="center" id="bVd-Eb-qHC"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" alpha="0.0" radius="4" id="gdf-GL-XSx">
+                                            <color key="backgroundColor" red="0.1019607843" green="0.66274509800000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="20" height="1" alignment="center" alpha="0.0" radius="4" id="Gxk-cl-kL0">
+                                            <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" alpha="0.0" radius="4" id="gZs-CP-tDs">
+                                            <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                        <group width="0.16" height="1" alignment="center" alpha="0.0" radius="4" id="TvY-Ko-SD8">
+                                            <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </group>
+                        <label width="1" widthAdjustment="-4" height="9" alignment="right" id="pgd-jo-htv">
+                            <color key="textColor" red="0.70980392160000005" green="0.71764705880000002" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="drawGroup" destination="MZ2-mY-eJI" id="OqH-HO-ObT"/>
+                        <outlet property="drawLabel1" destination="1w6-IE-FnN" id="GD4-WU-DgR"/>
+                        <outlet property="drawLabel10" destination="cjc-Ik-0MM" id="fCB-Fz-mmL"/>
+                        <outlet property="drawLabel11" destination="Sxd-JG-H7O" id="Iv3-YY-ete"/>
+                        <outlet property="drawLabel12" destination="jwQ-S2-b33" id="YVF-Gr-OFy"/>
+                        <outlet property="drawLabel13" destination="Kha-18-tjR" id="JtB-bX-Syi"/>
+                        <outlet property="drawLabel14" destination="bVd-Eb-qHC" id="Lat-fU-V6r"/>
+                        <outlet property="drawLabel2" destination="SRK-zh-CQM" id="5HW-7S-keI"/>
+                        <outlet property="drawLabel3" destination="6Xy-zr-gv9" id="v8S-wc-qPZ"/>
+                        <outlet property="drawLabel4" destination="b5C-BO-OC0" id="PIz-QW-txw"/>
+                        <outlet property="drawLabel5" destination="reN-1D-66E" id="b6o-ry-8DG"/>
+                        <outlet property="drawLabel6" destination="4vY-vc-SaJ" id="X4K-KH-wxk"/>
+                        <outlet property="drawLabel7" destination="9nB-a2-OEZ" id="BTj-0f-oae"/>
+                        <outlet property="drawLabel8" destination="w1c-Be-djA" id="SW7-um-Icl"/>
+                        <outlet property="drawLabel9" destination="INt-Ee-9YB" id="Eu6-hb-gN1"/>
+                        <outlet property="drawTimeLabel" destination="pgd-jo-htv" id="XUm-Pt-5nB"/>
+                        <outlet property="issueLabel" destination="A0u-2v-cR3" id="Fbt-Bi-rKg"/>
+                        <segue destination="qhf-cz-K6G" kind="relationship" relationship="nextPage" id="mcf-L3-Mrs"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="337" y="799"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="Bbi-hn-EIi">
+            <objects>
+                <controller identifier="Fc3dResultController" title="返回" id="qhf-cz-K6G" customClass="Fc3dResultController">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="h19-Il-b2p">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="8pp-ou-rql"/>
+                                <label width="72" height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999996" text="福彩3D" textAlignment="left" id="gf4-6N-Pkn">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="134" height="16" alignment="left" id="J4z-cj-blb">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="Abj-GU-gdJ"/>
+                                <label alignment="left" alpha="0.69999999999999996" id="YmL-dv-zFF">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="33" alignment="left" hidden="YES" id="um5-Lg-nTU">
+                            <items>
+                                <group width="0.02" height="1" alignment="left" id="62E-P3-aKu"/>
+                                <group width="0.23999999999999999" height="30" alignment="left" id="kP4-xG-bvr">
+                                    <items>
+                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="Lfk-tc-xh8">
+                                            <items>
+                                                <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="Hot-QV-NYb"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="0.23999999999999999" height="30" alignment="left" id="414-JS-3Li">
+                                    <items>
+                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="Szd-Go-0Xa">
+                                            <items>
+                                                <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="HZu-qP-7We"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="0.23999999999999999" height="30" alignment="left" id="KNo-UH-Nec">
+                                    <items>
+                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="uHE-nQ-vRz">
+                                            <items>
+                                                <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="F5a-7N-e3o"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <label width="1" widthAdjustment="-4" alignment="right" alpha="0.69999999999999996" id="EmM-wC-DHI">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="drawGroup" destination="um5-Lg-nTU" id="b7F-VU-O3D"/>
+                        <outlet property="drawLabel1" destination="Hot-QV-NYb" id="pZS-po-tKi"/>
+                        <outlet property="drawLabel2" destination="HZu-qP-7We" id="BKH-zq-lzP"/>
+                        <outlet property="drawLabel3" destination="F5a-7N-e3o" id="w0g-95-EXV"/>
+                        <outlet property="drawTimeLabel" destination="EmM-wC-DHI" id="NQO-EE-gQv"/>
+                        <outlet property="issueLabel" destination="YmL-dv-zFF" id="Lk7-Wc-cee"/>
+                        <segue destination="lGB-eK-3C2" kind="relationship" relationship="nextPage" id="M78-rz-ly5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="524" y="799"/>
+        </scene>
+        <!--篮球比分-->
+        <scene sceneID="vqJ-Fh-QvX">
+            <objects>
+                <controller identifier="JclqGameInterfaceController" title="篮球比分" id="icX-3d-fEI" customClass="JclqGameInterfaceController">
+                    <items>
+                        <table alignment="left" id="UPk-TZ-aag">
+                            <items>
+                                <tableRow identifier="defaultLqLiving" id="7NA-uh-8lC" userLabel="defaultLqLiving" customClass="GameLivingARowController">
+                                    <group key="rootItem" width="1" height="70" alignment="left" contentMode="scaleAspectFill" layout="vertical" radius="6" id="RgY-cl-yEP">
+                                        <items>
+                                            <group width="1" height="16" alignment="left" id="rvc-Cs-zly">
+                                                <items>
+                                                    <label width="1" height="12" alignment="left" verticalAlignment="bottom" text="08-12" textAlignment="center" id="PL4-5h-ae1">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" height="27" alignment="left" id="EPE-Rg-G67">
+                                                <items>
+                                                    <group width="35" height="1" alignment="left" id="cKa-nw-LEr">
+                                                        <items>
+                                                            <group width="25" height="25" alignment="right" verticalAlignment="bottom" radius="12.5" id="0YA-X4-cec">
+                                                                <items>
+                                                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="AUq-Nl-OgF"/>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </group>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </group>
+                                                    <label height="25" alignment="center" verticalAlignment="bottom" text="VS" textAlignment="center" id="N1e-at-Msg">
+                                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                                    </label>
+                                                    <group width="35" height="1" alignment="right" id="dTX-6x-07J">
+                                                        <items>
+                                                            <group width="25" height="25" alignment="left" verticalAlignment="bottom" radius="12.5" id="fMA-Lz-kZm">
+                                                                <items>
+                                                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="W39-8q-2z3"/>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </group>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <group width="1" height="15" alignment="left" id="9c2-NX-Ixb">
+                                                <items>
+                                                    <group width="45" height="1" alignment="left" id="KZT-nb-l6H">
+                                                        <items>
+                                                            <label width="45" height="1" alignment="right" textAlignment="center" id="RIx-fM-fSJ">
+                                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <label height="15" alignment="center" verticalAlignment="center" textAlignment="center" id="wxT-zM-VOh">
+                                                        <fontDescription key="font" type="system" pointSize="10"/>
+                                                    </label>
+                                                    <group width="50" height="1" alignment="right" id="5es-51-gz1">
+                                                        <items>
+                                                            <label width="45" height="1" alignment="right" textAlignment="center" id="unp-v5-XYh">
+                                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="leftImage" destination="AUq-Nl-OgF" id="9VP-yM-Fyf"/>
+                                        <outlet property="leftLabel" destination="RIx-fM-fSJ" id="U1E-K0-VWl"/>
+                                        <outlet property="rightImage" destination="W39-8q-2z3" id="dhY-m3-Zff"/>
+                                        <outlet property="rightLabel" destination="unp-v5-XYh" id="mGB-Fh-LZQ"/>
+                                        <outlet property="scoreLabel" destination="N1e-at-Msg" id="ABa-da-UR8"/>
+                                        <outlet property="stateLabel" destination="wxT-zM-VOh" id="cS7-5F-ucn"/>
+                                        <outlet property="timeLabel" destination="PL4-5h-ae1" id="mbe-fF-Oqj"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </table>
+                        <label width="1" height="1" alignment="center" hidden="YES" text="暂无数据" textAlignment="center" id="isX-P7-bSg">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="interfaceTable" destination="UPk-TZ-aag" id="gqJ-HE-hWz"/>
+                        <outlet property="noDataLabel" destination="isX-P7-bSg" id="yrT-Td-ylu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="674" y="506"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="rgV-3b-MzA">
+            <objects>
+                <controller identifier="Pl3ResultController" title="返回" id="lGB-eK-3C2" customClass="Pl3ResultController">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="V2m-kX-p4V">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="iwQ-m0-IFg"/>
+                                <label height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999996" text="排列三" textAlignment="left" id="Txf-sv-WAw">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="134" height="16" alignment="left" id="sHX-sb-eME">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="0fs-dr-WKI"/>
+                                <label alignment="left" alpha="0.69999999999999996" id="iJk-oT-hla">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="33" alignment="left" hidden="YES" id="Km0-9X-VZv">
+                            <items>
+                                <group width="0.02" height="1" alignment="left" id="fBn-6k-Wrv"/>
+                                <group width="0.23999999999999999" height="30" alignment="left" id="ZkA-qN-QF1">
+                                    <items>
+                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="H3P-9Z-4XE">
+                                            <items>
+                                                <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="8sw-Fb-MZv"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="0.23999999999999999" height="30" alignment="left" id="oMR-YI-qw1">
+                                    <items>
+                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="86m-en-EIO">
+                                            <items>
+                                                <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="cf3-UR-mOL"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="0.23999999999999999" height="30" alignment="left" id="Ina-3d-ohF">
+                                    <items>
+                                        <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="cUO-cs-Xmq">
+                                            <items>
+                                                <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="r5Q-XG-Px7"/>
+                                            </items>
+                                            <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <label width="1" widthAdjustment="-4" alignment="right" alpha="0.69999999999999996" id="50U-OY-Ca3">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="drawGroup" destination="Km0-9X-VZv" id="0dm-Rr-ZKk"/>
+                        <outlet property="drawLabel1" destination="8sw-Fb-MZv" id="0dT-4E-woB"/>
+                        <outlet property="drawLabel2" destination="cf3-UR-mOL" id="8Gn-f5-lmJ"/>
+                        <outlet property="drawLabel3" destination="r5Q-XG-Px7" id="D11-1b-u12"/>
+                        <outlet property="drawTimeLabel" destination="50U-OY-Ca3" id="h3e-qw-cqh"/>
+                        <outlet property="issueLabel" destination="iJk-oT-hla" id="yOA-6z-17Z"/>
+                        <segue destination="XeF-IS-xeW" kind="relationship" relationship="nextPage" id="bC0-XZ-yeV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="725" y="797"/>
+        </scene>
+        <!--详情-->
+        <scene sceneID="L4Z-pM-DeB">
+            <objects>
+                <controller identifier="DPJclqGameInfoController" title="详情" id="Y8Y-Ca-hVn" customClass="DPJclqGameInfoController">
+                    <items>
+                        <group width="1" height="56" alignment="left" contentMode="scaleAspectFill" layout="vertical" radius="6" id="ckp-ru-0jn">
+                            <items>
+                                <group width="1" height="32" alignment="left" id="A4W-Gc-eMO">
+                                    <items>
+                                        <group width="35" height="1" alignment="left" id="7zs-cY-ZSd">
+                                            <items>
+                                                <group width="25" height="25" alignment="right" verticalAlignment="bottom" radius="12.5" id="GWx-7x-h9n">
+                                                    <items>
+                                                        <imageView width="25" height="25" alignment="center" verticalAlignment="center" id="hri-36-Mvy"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </group>
+                                        <label height="25" alignment="center" verticalAlignment="bottom" text="VS" textAlignment="center" id="zzx-6G-KPd">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <group width="35" height="1" alignment="right" id="6Gf-7a-7py">
+                                            <items>
+                                                <group width="25" height="25" alignment="left" verticalAlignment="bottom" radius="12.5" id="ATq-re-owl">
+                                                    <items>
+                                                        <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="RWb-oF-ynO"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="15" alignment="left" id="zGK-4Z-1rx">
+                                    <items>
+                                        <group width="45" height="1" alignment="left" id="bGX-Nh-6kJ">
+                                            <items>
+                                                <label width="45" height="1" alignment="right" textAlignment="center" id="piv-Qu-K2x">
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <label height="15" alignment="center" verticalAlignment="center" textAlignment="center" id="5t2-Yw-qPc">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <group width="50" height="1" alignment="right" id="RXk-ka-NRB">
+                                            <items>
+                                                <label width="45" height="15" alignment="right" textAlignment="center" id="e2d-sk-qOc">
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <label width="1" height="50" alignment="left" text="2:3" textAlignment="center" id="NCR-2L-lZr">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="30"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="leftImage" destination="hri-36-Mvy" id="FWs-XW-6OF"/>
+                        <outlet property="leftLabel" destination="piv-Qu-K2x" id="SlK-im-BbQ"/>
+                        <outlet property="rightImage" destination="RWb-oF-ynO" id="FHZ-6m-2GK"/>
+                        <outlet property="rightLabel" destination="e2d-sk-qOc" id="MPL-pL-6c8"/>
+                        <outlet property="scoreLabel" destination="NCR-2L-lZr" id="sxg-nv-wcj"/>
+                        <outlet property="stateLabel" destination="5t2-Yw-qPc" id="p7R-Qf-lR1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="958" y="506"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="cfV-Wr-sRh">
+            <objects>
+                <controller identifier="Pl5ResultController" title="返回" id="XeF-IS-xeW" customClass="Pl5ResultController">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="Mi9-ui-yZg">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="ZeM-rA-MMW"/>
+                                <label width="63" height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999996" text="排列五" textAlignment="left" id="Sd7-pG-O8f">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="134" height="16" alignment="left" id="951-Bg-6tD">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="reO-ed-Nru"/>
+                                <label alignment="left" alpha="0.69999999999999996" id="ud5-4b-sZY">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="71" alignment="left" hidden="YES" layout="vertical" id="4TY-NZ-6le">
+                            <items>
+                                <group width="1" height="33" alignment="left" id="gUz-ac-cht">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="FQs-nI-5wF"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="NP6-tq-Zli">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="GoU-YM-fFr">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="DYE-R5-xqv"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="nVB-Fa-7cl">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="0hw-zh-NcQ">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="kG9-BU-VOp"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="wUg-It-TDw">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="u17-DE-vcf">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="HNF-HY-XGo"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="aN4-tI-vaL">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="HFa-sW-Nwg">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="pBY-Xc-und"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="33" alignment="left" verticalAlignment="center" id="KrM-X5-AOC">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="Zcu-Ay-rv0"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="kCd-8h-RXx">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="jbN-5H-XKe">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="nGa-Bc-Orx"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <label width="1" widthAdjustment="-4" alignment="right" alpha="0.69999999999999996" id="Xsi-TC-GwQ">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="drawGroup" destination="4TY-NZ-6le" id="cTA-CU-JWR"/>
+                        <outlet property="drawLabel1" destination="DYE-R5-xqv" id="luO-uO-Xp6"/>
+                        <outlet property="drawLabel2" destination="kG9-BU-VOp" id="p4w-O8-Ib6"/>
+                        <outlet property="drawLabel3" destination="HNF-HY-XGo" id="ISW-mp-2an"/>
+                        <outlet property="drawLabel4" destination="pBY-Xc-und" id="3Td-Nh-m6h"/>
+                        <outlet property="drawLabel5" destination="nGa-Bc-Orx" id="4BZ-QP-vel"/>
+                        <outlet property="drawTimeLabel" destination="Xsi-TC-GwQ" id="AJU-ao-ck0"/>
+                        <outlet property="issueLabel" destination="ud5-4b-sZY" id="Vlx-Kc-LPh"/>
+                        <segue destination="dQU-gH-umq" kind="relationship" relationship="nextPage" id="7g8-fW-flM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="922" y="796"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="ZqB-6P-J5D">
+            <objects>
+                <controller identifier="QxcReslutController" title="返回" id="dQU-gH-umq" customClass="QxcReslutController">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="XAc-4N-hmM">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="ga7-aP-MdP"/>
+                                <label width="63" height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999996" text="七星彩" textAlignment="left" id="4JX-t6-V5j">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="134" height="16" alignment="left" id="1H9-sU-S9T">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="OBd-Nc-LOm"/>
+                                <label alignment="left" alpha="0.69999999999999996" id="MBd-V9-Vnh">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="71" alignment="left" hidden="YES" layout="vertical" id="x9m-Rh-V1W">
+                            <items>
+                                <group width="1" height="33" alignment="left" id="tk7-cv-9s4">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="blY-lM-Qs5"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="LG5-zH-yqc">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="5BW-3O-fOd">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="NKg-q3-hW4"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="rrM-P3-2Xd">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="vCL-ve-4Rd">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="CN5-9Q-lRg"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="SiD-Lv-MBk">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="j16-Ae-1al">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="Bew-u3-MIi"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="d9f-3r-Xf4">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="5ah-Br-unv">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="KBn-XM-78i"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="33" alignment="left" verticalAlignment="center" id="sMp-Am-JuY">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="Ucu-fC-y93"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="tVr-sb-8Fp">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="QS9-8H-wOS">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="Xuh-hw-7DA"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="CaX-Qt-GNf">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="emB-l5-z2z">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="fN6-Oz-hb0"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="dPN-k8-gJD">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="vf9-Kl-eqt">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="y3d-qz-zab"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <label width="1" widthAdjustment="-4" alignment="right" alpha="0.69999999999999996" id="mkP-oZ-Km1">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="drawGroup" destination="x9m-Rh-V1W" id="av0-LM-nZf"/>
+                        <outlet property="drawLabel1" destination="NKg-q3-hW4" id="44Z-Ph-R2O"/>
+                        <outlet property="drawLabel2" destination="CN5-9Q-lRg" id="rLt-wZ-cbY"/>
+                        <outlet property="drawLabel3" destination="Bew-u3-MIi" id="l74-6n-a25"/>
+                        <outlet property="drawLabel4" destination="KBn-XM-78i" id="d8O-iI-EkT"/>
+                        <outlet property="drawLabel5" destination="Xuh-hw-7DA" id="wBp-OW-nxV"/>
+                        <outlet property="drawLabel6" destination="fN6-Oz-hb0" id="GAd-6T-tzC"/>
+                        <outlet property="drawLabel7" destination="y3d-qz-zab" id="MJH-sO-Ea7"/>
+                        <outlet property="drawTimeLabel" destination="mkP-oZ-Km1" id="uot-Y4-Lkh"/>
+                        <outlet property="issueLabel" destination="MBd-V9-Vnh" id="Bm4-p4-CIz"/>
+                        <segue destination="3dh-9L-0fk" kind="relationship" relationship="nextPage" id="xST-lh-2TX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1116" y="796"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="cbs-zU-dFN">
+            <objects>
+                <controller identifier="QlcResultController" title="返回" id="3dh-9L-0fk" customClass="QlcResultController">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="kDg-cj-pjC">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="QFO-Qi-dqh"/>
+                                <label width="63" height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999996" text="七乐彩" textAlignment="left" id="F7S-Dk-SxW">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="134" height="16" alignment="left" id="CYf-ji-B5r">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="u8e-kd-66c"/>
+                                <label alignment="left" alpha="0.69999999999999996" id="pvj-b7-Fgi">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="71" alignment="left" hidden="YES" layout="vertical" id="0QR-5K-YUg">
+                            <items>
+                                <group width="1" height="33" alignment="left" id="Q5n-cW-KJl">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="736-OL-lqR"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="cWx-lF-FKw">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="efp-Eh-afj">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="m0f-EC-4wu"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="URJ-s1-Q1h">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="Atl-rC-jms">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="piL-uY-CDv"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="ntG-8r-2DN">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="VS2-Fm-LQZ">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="Pxe-il-EyO"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="2Q6-Av-WaF">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="cq1-tn-DWS">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="yAp-SI-J2i"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="33" alignment="left" verticalAlignment="center" id="WQe-v5-9kN">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="7ur-lW-IvU"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="Vzq-7g-8b3">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="crA-bc-Ev0">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="ddh-tE-lYM"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="oPq-PX-r6x">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="5dD-ys-MIC">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="mTt-qm-n9X"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="4CG-RZ-xwj">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="haj-MI-k6D">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="i66-zQ-7pm"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="H3c-h3-GYQ">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="Gp8-Xb-Xr0">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="6Sz-3l-Vfw"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.10980392160000001" green="0.49019607840000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <label width="1" widthAdjustment="-4" alignment="right" alpha="0.69999999999999996" id="B1g-eo-mHd">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="drawGroup" destination="0QR-5K-YUg" id="s3Q-Kp-l2J"/>
+                        <outlet property="drawLabel1" destination="m0f-EC-4wu" id="WGq-5g-A3V"/>
+                        <outlet property="drawLabel2" destination="piL-uY-CDv" id="Gdv-JY-YAF"/>
+                        <outlet property="drawLabel3" destination="Pxe-il-EyO" id="sbC-LK-hUi"/>
+                        <outlet property="drawLabel4" destination="yAp-SI-J2i" id="4Mx-ny-Zav"/>
+                        <outlet property="drawLabel5" destination="ddh-tE-lYM" id="GXb-Dl-c85"/>
+                        <outlet property="drawLabel6" destination="mTt-qm-n9X" id="vUd-Ay-Zb1"/>
+                        <outlet property="drawLabel7" destination="i66-zQ-7pm" id="KjO-u6-WQg"/>
+                        <outlet property="drawLabel8" destination="6Sz-3l-Vfw" id="2Oo-iA-aNP"/>
+                        <outlet property="drawTimeLabel" destination="B1g-eo-mHd" id="BOv-Go-y8X"/>
+                        <outlet property="issueLabel" destination="pvj-b7-Fgi" id="oLc-jR-Uxu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1314" y="796"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="A9W-ub-iE5">
+            <objects>
+                <controller identifier="JczqResultController" title="返回" id="Njk-rb-VLy" customClass="JczqResultController">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="3n6-aF-1ju">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="Uyb-QA-icy"/>
+                                <label height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999973" text="竞彩足球" textAlignment="left" id="dIN-bp-Jah">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="15" alignment="left" id="4Mw-1h-yFc">
+                            <items>
+                                <label width="1" widthAdjustment="-5" alignment="right" verticalAlignment="center" text="07-15期 周五" id="qTD-NQ-Xml">
+                                    <color key="textColor" red="0.70980392160000005" green="0.71764705880000002" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <table alignment="left" id="wYC-LZ-LNZ">
+                            <items>
+                                <tableRow identifier="defaultJczq" selectable="NO" id="JQR-Wf-UwK" customClass="JcTableRowController">
+                                    <group key="rootItem" width="1" height="56" alignment="left" contentMode="scaleAspectFill" layout="vertical" id="vVd-Wq-62E">
+                                        <items>
+                                            <group width="1" height="32" alignment="left" id="WuC-P7-4Kc">
+                                                <items>
+                                                    <group width="40" height="1" alignment="left" id="GDu-3z-A7v">
+                                                        <items>
+                                                            <group width="25" height="25" alignment="right" verticalAlignment="bottom" radius="12.5" id="gOI-WJ-TxO">
+                                                                <items>
+                                                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="ltl-fz-GJO"/>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </group>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </group>
+                                                    <label height="25" alignment="center" verticalAlignment="bottom" text="VS" textAlignment="center" id="m9V-af-rgF">
+                                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                                    </label>
+                                                    <group width="40" height="1" alignment="right" id="6WN-5V-1oH">
+                                                        <items>
+                                                            <group width="25" height="25" alignment="left" verticalAlignment="bottom" radius="12.5" id="8Ll-cG-3cO">
+                                                                <items>
+                                                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="mYB-rf-5kH"/>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </group>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <group width="1" height="15" alignment="left" id="sRT-rU-hud">
+                                                <items>
+                                                    <label width="55" height="14" alignment="right" text="大彩大彩" textAlignment="center" id="TKZ-NZ-FTu">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                    <label width="55" height="14" alignment="left" text="大彩大彩" textAlignment="center" id="pRR-oJ-97j">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <separator alignment="left" verticalAlignment="bottom" alpha="0.050000000000000003" id="c5I-Yg-sWk">
+                                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </separator>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="leftImage" destination="ltl-fz-GJO" id="44U-bK-k3Q"/>
+                                        <outlet property="leftLabel" destination="pRR-oJ-97j" id="GI5-jt-iqt"/>
+                                        <outlet property="rightImage" destination="mYB-rf-5kH" id="9oN-Ba-2Kg"/>
+                                        <outlet property="rightLabel" destination="TKZ-NZ-FTu" id="vuX-BM-rfl"/>
+                                        <outlet property="scoreLabel" destination="m9V-af-rgF" id="fxf-wl-hdt"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </table>
+                        <label width="1" height="1" alignment="center" hidden="YES" text="暂无数据" textAlignment="center" id="4I0-hl-dUU">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="infoGroup" destination="4Mw-1h-yFc" id="OPI-mB-RVR"/>
+                        <outlet property="infoLabel" destination="qTD-NQ-Xml" id="KO4-ou-Tzy"/>
+                        <outlet property="interfaceTable" destination="wYC-LZ-LNZ" id="Vh3-f8-kPL"/>
+                        <segue destination="vM3-zm-4dT" kind="relationship" relationship="nextPage" id="qwB-q8-nJG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-246" y="797"/>
+        </scene>
+        <!--返回-->
+        <scene sceneID="5vO-hx-0an">
+            <objects>
+                <controller identifier="DltResultController" title="返回" hidesWhenLoading="NO" id="Ev4-jf-8JF" customClass="DltResultController" colorLabel="IBBuiltInLabel-Red">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="7EQ-Bk-Jow">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="94d-QE-tRb"/>
+                                <label height="0.80000000000000004" alignment="left" verticalAlignment="bottom" alpha="0.69999999999999973" text="大乐透" textAlignment="left" id="ePl-Jc-Ra4">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="21"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="134" height="16" alignment="left" id="yrG-wt-9po">
+                            <items>
+                                <group width="5" height="1" alignment="left" id="FTk-hU-ZkB"/>
+                                <label height="15" alignment="left" alpha="0.69999999999999996" id="wjD-AN-Czy">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="71" alignment="left" hidden="YES" layout="vertical" id="wwF-7k-7Gn">
+                            <items>
+                                <group width="1" height="33" alignment="left" id="DCR-hh-gYV">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="iAS-RZ-1AR"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="6vx-Y1-2O4">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="gDE-u5-Y2Y">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="72A-16-Wpr"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058823529409" green="0.13333333333333333" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="99t-X4-Mac">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="pqU-Iq-32H">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="S04-7k-UaQ"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="3R0-uA-M0A">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="Jgk-vm-VMX">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="68J-HM-Dmv"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="30" height="30" alignment="left" id="bdp-Ja-yXj">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="sjJ-TU-nvP">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="SuP-0X-fNa"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="33" alignment="left" verticalAlignment="center" id="Yp2-3l-X6z">
+                                    <items>
+                                        <group width="0.02" height="1" alignment="left" id="g7h-6N-eCQ"/>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="9rM-dk-U2S">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="SvY-HC-2K9">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="W01-Rp-tXG"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.1333333333" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="38i-t4-Ylc">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="19z-4N-dkO">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="eBg-0q-aX6"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.10980392160000001" green="0.49019607840000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                        <group width="0.23999999999999999" height="30" alignment="left" id="VoH-RV-Uav">
+                                            <items>
+                                                <group width="30" height="30" alignment="center" verticalAlignment="center" radius="15" id="OaD-sj-Jci">
+                                                    <items>
+                                                        <label width="1" height="1" alignment="center" verticalAlignment="center" textAlignment="center" id="7Wv-aj-0Bs"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.10980392156862745" green="0.49019607843137253" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="26" alignment="left" id="Fu7-W7-uxw">
+                            <items>
+                                <label width="1" widthAdjustment="-4" alignment="right" alpha="0.69999999999999996" id="fgk-i8-dgY">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="drawGroup" destination="wwF-7k-7Gn" id="C1J-tj-bSl"/>
+                        <outlet property="drawLabel1" destination="72A-16-Wpr" id="4f2-pA-ka5"/>
+                        <outlet property="drawLabel2" destination="S04-7k-UaQ" id="h5O-p8-XeP"/>
+                        <outlet property="drawLabel3" destination="68J-HM-Dmv" id="7wX-RN-Sqj"/>
+                        <outlet property="drawLabel4" destination="SuP-0X-fNa" id="4In-iu-CBH"/>
+                        <outlet property="drawLabel5" destination="W01-Rp-tXG" id="MbC-6Z-Sgs"/>
+                        <outlet property="drawLabel6" destination="eBg-0q-aX6" id="enT-53-oqU"/>
+                        <outlet property="drawLabel7" destination="7Wv-aj-0Bs" id="nWp-8w-1dV"/>
+                        <outlet property="drawTimeLabel" destination="fgk-i8-dgY" id="5l1-Eh-IK6"/>
+                        <outlet property="issueLabel" destination="wjD-AN-Czy" id="04z-uj-rRm"/>
+                        <segue destination="Njk-rb-VLy" kind="relationship" relationship="nextPage" id="1iV-Qr-WLQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-437" y="796.5"/>
+        </scene>
+        <!--足球比分-->
+        <scene sceneID="vCf-9g-gI0">
+            <objects>
+                <controller identifier="JczqGameInterfaceController" title="足球比分" id="InU-qA-Efq" customClass="JczqGameInterfaceController">
+                    <items>
+                        <table alignment="left" id="L6l-iQ-HlE">
+                            <items>
+                                <tableRow identifier="defaultZqLiving" id="Mjg-ml-a6W" customClass="GameLivingARowController">
+                                    <group key="rootItem" width="1" height="70" alignment="left" contentMode="scaleAspectFill" layout="vertical" radius="6" id="Urm-eJ-Icb">
+                                        <items>
+                                            <group width="1" height="16" alignment="left" id="n92-h8-zWO">
+                                                <items>
+                                                    <label width="1" height="12" alignment="left" verticalAlignment="bottom" text="08-12" textAlignment="center" id="Dq4-SV-oKM">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" height="27" alignment="left" id="Eur-Km-fcj">
+                                                <items>
+                                                    <group width="35" height="1" alignment="left" id="s3W-uT-Vmt">
+                                                        <items>
+                                                            <group width="25" height="25" alignment="right" verticalAlignment="bottom" radius="12.5" id="Ybr-QX-PSs">
+                                                                <items>
+                                                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="x9y-dT-kgw"/>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </group>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </group>
+                                                    <label height="25" alignment="center" verticalAlignment="bottom" text="VS" textAlignment="center" id="Dnf-AJ-rJz">
+                                                        <fontDescription key="font" type="system" pointSize="14"/>
+                                                    </label>
+                                                    <group width="35" height="1" alignment="right" id="LCL-gi-kfN">
+                                                        <items>
+                                                            <group width="25" height="25" alignment="left" verticalAlignment="bottom" radius="12.5" id="jNK-rI-U0b">
+                                                                <items>
+                                                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="Wgb-U7-IuY"/>
+                                                                </items>
+                                                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </group>
+                                                        </items>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                            <group width="1" height="15" alignment="left" id="V4V-sw-XEn">
+                                                <items>
+                                                    <group width="45" height="1" alignment="left" id="ub6-nV-RYR">
+                                                        <items>
+                                                            <label width="45" height="1" alignment="right" textAlignment="center" id="18X-e7-uuo">
+                                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <label height="15" alignment="center" verticalAlignment="center" textAlignment="center" id="djg-KU-vHR">
+                                                        <fontDescription key="font" type="system" pointSize="10"/>
+                                                    </label>
+                                                    <group width="50" height="1" alignment="right" id="Rkl-PP-VG0">
+                                                        <items>
+                                                            <label width="45" height="1" alignment="right" textAlignment="center" id="9rs-GC-2oC">
+                                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="leftImage" destination="x9y-dT-kgw" id="y8F-yt-8zH"/>
+                                        <outlet property="leftLabel" destination="18X-e7-uuo" id="vcL-dn-Ngd"/>
+                                        <outlet property="rightImage" destination="Wgb-U7-IuY" id="NVB-ZT-lcd"/>
+                                        <outlet property="rightLabel" destination="9rs-GC-2oC" id="QdF-YO-IiS"/>
+                                        <outlet property="scoreLabel" destination="Dnf-AJ-rJz" id="YUH-wM-93N"/>
+                                        <outlet property="stateLabel" destination="djg-KU-vHR" id="yA1-QP-JI5"/>
+                                        <outlet property="timeLabel" destination="Dq4-SV-oKM" id="bS0-LS-Kbs"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </table>
+                        <label width="1" height="1" alignment="center" hidden="YES" text="暂无数据" textAlignment="center" id="uob-yD-vn1">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="interfaceTable" destination="L6l-iQ-HlE" id="mtr-z0-yhJ"/>
+                        <outlet property="noDataLabel" destination="uob-yD-vn1" id="nL5-zh-a6T"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="674" y="183"/>
+        </scene>
+        <!--详情-->
+        <scene sceneID="V1O-zw-nt7">
+            <objects>
+                <controller identifier="DPJczqGameInfoController" title="详情" id="mQE-Jt-sNr" customClass="DPJczqGameInfoController">
+                    <items>
+                        <group width="1" height="56" alignment="left" contentMode="scaleAspectFill" layout="vertical" radius="6" id="jxd-nf-Zml">
+                            <items>
+                                <group width="1" height="36" alignment="left" id="rcP-tR-HrV">
+                                    <items>
+                                        <group width="35" height="1" alignment="left" id="pQ6-a7-Bzu">
+                                            <items>
+                                                <group width="25" height="25" alignment="right" verticalAlignment="bottom" radius="12.5" id="Hca-lT-q2j">
+                                                    <items>
+                                                        <imageView width="25" height="1" alignment="center" verticalAlignment="center" id="mkB-hM-m2X"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </group>
+                                        <label height="21" alignment="center" verticalAlignment="bottom" text="VS" textAlignment="center" id="OCw-Bc-JAo">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <group width="35" height="1" alignment="right" id="slu-de-Zpp">
+                                            <items>
+                                                <group width="25" height="25" alignment="left" verticalAlignment="bottom" radius="12.5" id="Ltp-sK-0C6">
+                                                    <items>
+                                                        <imageView width="1" height="1" alignment="center" verticalAlignment="center" id="jZx-ba-FnY"/>
+                                                    </items>
+                                                    <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </group>
+                                            </items>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" height="15" alignment="left" id="ydz-Zh-bd1">
+                                    <items>
+                                        <group width="45" height="1" alignment="left" id="Wpc-7G-ec9">
+                                            <items>
+                                                <label width="47.5" height="1" alignment="right" textAlignment="center" id="ZMV-j4-eoN">
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <label height="15" alignment="center" verticalAlignment="center" textAlignment="center" id="gxU-yc-2MT">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </label>
+                                        <group width="45" height="1" alignment="right" id="CZf-df-s4a">
+                                            <items>
+                                                <label width="47.5" height="1" alignment="left" textAlignment="center" id="li8-WF-wTD">
+                                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <label width="1" height="50" alignment="left" text="2:3" textAlignment="center" id="kec-GR-Nhb">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="30"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="leftImage" destination="mkB-hM-m2X" id="whm-2S-h9n"/>
+                        <outlet property="leftLabel" destination="ZMV-j4-eoN" id="GRV-M1-GfH"/>
+                        <outlet property="rightImage" destination="jZx-ba-FnY" id="b1L-D2-021"/>
+                        <outlet property="rightLabel" destination="li8-WF-wTD" id="ZbO-sL-7B9"/>
+                        <outlet property="scoreLabel" destination="kec-GR-Nhb" id="qU4-r9-ybz"/>
+                        <outlet property="stateLabel" destination="gxU-yc-2MT" id="sxH-Rh-Ywk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="958" y="183"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KGY-CW-EAT">
+            <objects>
+                <controller id="lwk-FV-dbB" customClass="NotificationController">
+                    <items>
+                        <label alignment="left" numberOfLines="0" id="Jw2-P9-Tgf"/>
+                    </items>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="Jw2-P9-Tgf" id="emI-4M-ZRi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="147" y="1278"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>

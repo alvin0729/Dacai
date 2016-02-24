@@ -1,0 +1,46 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9BD7F651E281DC77707A51538DAF3E07027ED290",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b0baa8de-a980-994c-908f-0ab7a755641e++8460" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "02f93f08-7ac8-d945-b02b-bab7e629ceee++8498" : 0,
+    "BB229DFE20224C2D7924D1DF86CE0B2462AD9B38" : 0,
+    "b0baa8de-a980-994c-908f-0ab7a755641e++8460" : 0,
+    "9BD7F651E281DC77707A51538DAF3E07027ED290" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6E34CFC3-C493-4260-8BC7-F6BD92E23FBE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "02f93f08-7ac8-d945-b02b-bab7e629ceee++8498" : "PhoneLottery",
+    "BB229DFE20224C2D7924D1DF86CE0B2462AD9B38" : "protobuf_idl",
+    "b0baa8de-a980-994c-908f-0ab7a755641e++8460" : "DacaiLibrary",
+    "9BD7F651E281DC77707A51538DAF3E07027ED290" : "Jackpot"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Jackpot",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Jackpot.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/10.12.2.200:8090\/svn\/IOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "02f93f08-7ac8-d945-b02b-bab7e629ceee++8498"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/10.12.2.200:8090\/svn\/IOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9BD7F651E281DC77707A51538DAF3E07027ED290"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/10.12.8.250:8080\/tfs\/DacaiHub\/Git%2520Dev%2520Tools\/_git\/protobuf_idl",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BB229DFE20224C2D7924D1DF86CE0B2462AD9B38"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/10.12.2.200:8090\/svn\/AppLib",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b0baa8de-a980-994c-908f-0ab7a755641e++8460"
+    }
+  ]
+}

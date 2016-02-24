@@ -1,0 +1,34 @@
+//
+//  Kathmandu-Prefix.pch
+//  Kathmandu
+//
+//  Created by WUFAN on 15/12/10.
+//  Copyright © 2015年 dacai. All rights reserved.
+//
+
+#ifndef Kathmandu_prefix_pch
+#define Kathmandu_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+#define KTMLog(format, ...)         NSLog(@"Kathmandu => " format, ##__VA_ARGS__)
+#define KTMAssert(condition)        NSAssert(condition, @"Kathmandu assert triggerred!")
+#else
+#define KTMLog(format, ...)         {}
+#define KTMAssert(condition)        {}
+#endif
+
+#endif /* Kathmandu_prefix_pch */

@@ -1,0 +1,73 @@
+//
+//  JKTJackpot.pch
+//  Jackpot
+//
+//  Created by wufan on 15/6/26.
+//  Copyright (c) 2015年 dacai. All rights reserved.
+//
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+// 系统 Framework
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// 第三方 Framework
+#import <Masonry/Masonry.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <MTStringAttributes/MTStringParser.h>
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIKit+AFNetworking.h>
+#import <MSWeakTimer/MSWeakTimer.h>
+
+// 私有 Framework
+#import <Kathmandu/Kathmandu.h>
+#import <AlgorithmToolkit/AlgorithmToolkit.h>
+
+// 常亮, 宏定义
+#import "DPAppMacro.h"
+#import "DPConstants.h"
+#import "DPURLSets.h"
+#import "HelperMacro.h"
+#import "GameTypeEnum.h"
+
+// 扩展, 公用控件
+#import "AFHTTPSessionManager+Jackpot.h"
+#import "AFImageDiskCache.h"
+#import "UIViewController+HUD.h"
+#import "UIImage+DPCache.h"
+#import "DPToast.h"
+
+// 基础
+#import "UIViewController+Extension.h"
+#import "DPMemberManager.h"
+#import "DPAnalyticsEnum.h"
+#import "UIButton+DPAnalyticsKit.h"
+#import "DPAppURLRoutes.h"
+
+// 第三方 SDK
+#import <AlipaySDK/AlipaySDK.h>
+
+// component
+#import "DPWatchShareDataDefine.h"
+
+#endif
+
+// clear third library log
+//#ifndef __OPTIMIZE__
+//#define NSLog(format, ...)      NSLog(format, ##__VA_ARGS__)
+//#else
+//#define NSLog(...)      {}
+//#endif

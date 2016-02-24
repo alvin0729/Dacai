@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0630"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E40E1C781B5E23F6004C7EC4"
+               BuildableName = "Jackpot WatchKit App.app"
+               BlueprintName = "Jackpot WatchKit App"
+               ReferencedContainer = "container:Jackpot.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E40E1C661B5E23F6004C7EC4"
+               BuildableName = "Jackpot WatchKit Extension.appex"
+               BlueprintName = "Jackpot WatchKit Extension"
+               ReferencedContainer = "container:Jackpot.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "50C1BAEF1B3CF4EF00D5C847"
+               BuildableName = "Jackpot.app"
+               BlueprintName = "Jackpot"
+               ReferencedContainer = "container:Jackpot.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E40E1C781B5E23F6004C7EC4"
+            BuildableName = "Jackpot WatchKit App.app"
+            BlueprintName = "Jackpot WatchKit App"
+            ReferencedContainer = "container:Jackpot.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/Jackpot">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E40E1C781B5E23F6004C7EC4"
+            BuildableName = "Jackpot WatchKit App.app"
+            BlueprintName = "Jackpot WatchKit App"
+            ReferencedContainer = "container:Jackpot.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E40E1C781B5E23F6004C7EC4"
+            BuildableName = "Jackpot WatchKit App.app"
+            BlueprintName = "Jackpot WatchKit App"
+            ReferencedContainer = "container:Jackpot.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/Jackpot">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E40E1C781B5E23F6004C7EC4"
+            BuildableName = "Jackpot WatchKit App.app"
+            BlueprintName = "Jackpot WatchKit App"
+            ReferencedContainer = "container:Jackpot.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E40E1C781B5E23F6004C7EC4"
+            BuildableName = "Jackpot WatchKit App.app"
+            BlueprintName = "Jackpot WatchKit App"
+            ReferencedContainer = "container:Jackpot.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__38-[DPJczqBuyViewController viewDidLoad]_block_invoke:DPJczqBuyViewController.mm">
+      </ContextState>
+      <ContextState
+         contextName = "-[DPJczqBuyViewController initialDataWithGameType:]:DPJczqBuyViewController.mm">
+      </ContextState>
+      <ContextState
+         contextName = "-[DPJczqBuyViewController navigationMenu:selectedAtIndex:]:DPJczqBuyViewController.mm">
+      </ContextState>
+      <ContextState
+         contextName = "-[DPJczqBuyViewController tableView:cellForRowAtIndexPath:]:DPJczqBuyViewController.mm">
+      </ContextState>
+      <ContextState
+         contextName = "-[DPJczqBuyViewController updateSelectStatusWithMatch:selectGmaeType:index:select:]:DPJczqBuyViewController.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "baseMatch.matchOption">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DPJczqBuyViewController initialSelectStudus]:DPJczqBuyViewController.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "option">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

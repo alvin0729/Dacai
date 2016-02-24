@@ -1,0 +1,140 @@
+
+竞彩足球
+   DPJczqBuyViewController       竞彩足球投注页面
+
+      DPJczqBuyCell                           竞彩足球投注单元格
+      DPJczqAnalysisCell                      竞彩足球投注分析视图
+      DPJingCaiMoreView                       竞彩足球投注更多玩法
+
+
+   DPJczqTransferViewController  竞彩足球中转页面
+      DPJczqTransferCell                     竞彩足球中转单元格
+
+
+  DPJczqOptimizeViewControl      竞彩足球优化方案页面
+     DPJczqOptimizeCellTableViewCell         竞彩足球优化方案单元格
+
+  DPJcdgViewController            竞彩足球单关专题
+     DPJcdgProtocols                           单关协议和数据源
+     DPJcdgDataModel                            单关数据模型
+     DPJcdgTableCells                           单关单元格
+
+
+
+北单
+DPBdBuyViewController       北单投注页面
+
+   DPBdBuyCell                          北单投注单元格
+   DPJczqAnalysisCell                    北单投注分析视图
+   DPBdBuyMoreView                       竞北单投注更多玩法
+
+
+DPBdTransferViewController  北单中转页面
+   DPBdTransferCell                    北单中转单元格
+
+
+篮彩
+DPJclqBuyViewController       竞彩篮球投注页面
+
+      DPBdBuyCell                          竞彩篮球投注单元格
+      DPLcAnalysisCell                     竞彩篮球投注分析视图
+      DPLanCaiMoreView                     竞彩篮球投注更多玩法
+
+
+DPJclqTransferVC              竞彩篮球中转页面
+      DPJcLqTransferCell                   竞彩篮球中转单元格
+
+
+足彩
+    DPZcNineViewController                任选九投注
+    DPSfcViewController                   胜负彩投注
+    DPSfcTabBarView                       预售切换界面
+    DPZcBuyCell                           足彩投注单元格
+    DPRxninetransferVC                    任选九中转界面
+    DPSfcTransferVC                       胜负彩中转界面
+    DPZcTransferCell                      足彩中转界面
+
+
+
+数字彩
+   公共部分
+       common（公共界面）
+                 DPNoNetworkView             无网络时的界面
+                 DPShareView                 分享界面
+                 DPSmartPlanSetView          修改追号方案界
+                 DPSmartFollowVC             智能追号
+                 DPRedPacketViewController   红包页面
+                 DPPassModeView              过关方式界面
+
+
+          NumBuy（投注页面）
+                 DPLBNumberProtocol            投注公共协议
+                 DPLTNumberBaseViewController  数字彩投注页面基类
+                 DPLBSsqViewController         投注UI双色球
+                 DPLBDltViewController         投注UI大乐透
+                 DPLBSdViewController          投注UI福彩3d
+                 DPLBPsViewController          投注UI排列三
+                 DPLBPwViewController          投注UI排列五
+                 DPLBQxcViewController         投注UI七星彩
+                 DPLBQlcViewController         投注UI七乐彩
+                 DPLBJxsyxwViewController      投注UI江西十一选五
+                 DPLBNmgksViewController       投注UI内蒙古快三
+                 DPLBSdpksViewController       投注UI快乐扑克三
+
+                ViewsAndCells(投注视图或者cell)
+                                            DPLBNumberCells        投注单元格集合
+                                            DPLBGaopinNavMenu      高频
+                                            DPLBCellViewModel      单元格数据模型
+                DPLBDataModels(投注视图或者cell)
+                                            DPLBNumberBasicModel     投注底层数据模型
+                                            DPLBSsqDataModel         双色球数据模型
+                                            DPLBDltDataModel         大乐透
+                                            DPLBPsDataModel          排列三
+                                            DPLBPwDataModel          排列五
+                                            DPLBSdDataModel          福彩3d
+                                            DPLBQxcDataModel         七星彩
+                                            DPLBQlcDataModel         七乐彩
+                                            DPLBJxsyxwDataModel      江西11选5
+                                            DPLBNmgksDataModel       内蒙古快三
+                                            DPLBSdpksDataModel       扑克三
+
+                                    DPButtonCollectionCell collection单元格
+
+                                   DPSdHistoryTrendCell 福彩3d走势
+                                   DPHistoryTendencyCell 其他走势
+
+
+        NumTran(中转页面)
+                      DPLTNumberBaseProtocol               中转公共协议
+                      DPLTNumberViewModel                  中转公共数据模型
+                      DPLTNumberViewModel+Singletons       中转公共模型单例
+                      DPDigitalTimeSpaceView               倒计时界面
+                      DPDigitalBottomView                  底部提交倍数界面
+                      DPLTNumberCell                       中转单元格
+                      DPLTNumberBaseViewController         数字彩中转页面基类
+                      DPLTSsqViewController                中转双色球
+                      DPLTDltViewController                中转大乐透
+                      DPLTSdViewController                 中转公福彩3d
+                      DPLTPsViewController                 中转排列三
+                      DPLTPwViewController                 中转排列五
+                      DPLTQlcViewController                中转七乐彩
+                      DPLTQxcViewController                中转七星彩
+                      DPLTJxsyxwViewController             中转十一选五
+                      DPLTNmgksViewController              中转内蒙古快三
+                      DPLTSdpksViewController              中转快乐扑克三
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
